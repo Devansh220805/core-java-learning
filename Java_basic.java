@@ -4,8 +4,10 @@ public class Java_basic{
 
         // variable = container to store data 
         int age = 20;
-        // data type =  that defines the type of value a variable can hold
-        /* int : whole number
+        // data type =  that defines the type of value a variable can hold 
+
+        /* 1. Primitive
+           int : whole number
            long : store larger whole number then int 
            short : range of number is short then int 
            double : decimal value 
