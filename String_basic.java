@@ -15,5 +15,19 @@ public class String_basic {
         String a = sc.nextLine();
         System.out.println(a);
 
+        // Function 
+        // 1. Concatenation : merge 1 or more strings 
+        String first_name = "Devansh";
+        String last_name = "Kuraria";
+        String fullname = first_name+" "+last_name;
+        System.out.println(fullname);
+
+        // 2. length() : print length of String
+        System.out.println(fullname.length()); 
+
+        // 3. charAt() : we can check character at specific index 
+        for(int i = 0; i < fullname; i++){
+            System.out.println(fullname.charAt(i));
+        }
     }
 }
