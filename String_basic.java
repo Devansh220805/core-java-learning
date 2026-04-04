@@ -51,7 +51,43 @@ public class String_basic{
         String str1 = Integer.toString(number);
         System.out.println(str1);
 
+// String Builder : it allow user to change string and stop waste memory
+        // syntax
+        StringBuilder sb = new StringBuilder("Tony");
 
+        // i. Set char at index : 
+        sb.setCharAt(0, 'P');
+        System.out.println(sb);
+
+        // ii. insert : insert value at any specific index
+        sb.insert(0,"S");
+        System.out.println(sb);
+
+        // iii. delete : remove value from specific index
+        sb.delete(2, 3);
+        System.out.println(sb);
+
+        // iv. Append : add value at end of string
+        sb.append('y');
+        System.out.println(sb);
+
+        //v. length : return length of string 
+        System.out.println(sb.length());
+
+        // vi. reverse : reverse strings 
+        System.out.println(sb.reverse());
+        // or 
+        for(int i = 0; i < sb.length(); i++){
+            int front =i;
+            int back = sb.length()-1-i;
+            
+            char frontchar = sb.charAt(front);
+            char backchar = sb.charAt(back);
+
+            sb.setCharAt(front, backchar);
+            sb.setCharAt(back, frontchar);
+        }
+        System.out.println(sb);
     }
 }
 
