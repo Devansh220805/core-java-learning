@@ -26,7 +26,7 @@ public class String_basic {
         System.out.println(fullname.length()); 
 
         // 3. charAt() : we can check character at specific index 
-        for(int i = 0; i < fullname; i++){
+        for(int i = 0; i < fullname.length(); i++){
             System.out.println(fullname.charAt(i));
         }
     }
