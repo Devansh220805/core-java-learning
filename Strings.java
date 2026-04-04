@@ -1,5 +1,5 @@
 import java.util.*;
-public class String_basic {
+public class Strings {
     public static void Main(String[] args){
         Scanner sc = new Scanner(System.in);
         // String are immutable 
