@@ -1,6 +1,6 @@
 import java.util.*;
-public class Strings {
-    public static void Main(String[] args){
+public class String_basic{
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         // String are immutable 
         // Syntax
@@ -29,5 +29,27 @@ public class Strings {
         for(int i = 0; i < fullname.length(); i++){
             System.out.println(fullname.charAt(i));
         }
+
+        // 4. CompareTO() : compare 2 string and return 
+        if(first_name.compareTo(last_name)==0){
+            System.out.println("String is equal");
+        }
+        else{
+            System.out.println("String is not equal");
+        }
+
+        // 5. substring() : extract part of string 
+        System.out.println(fullname.substring(0,8));
+
+        // 6. parseInt : comvert String into int 
+        String no = "123";
+        int num = Integer.parseInt(no);
+        System.out.println(num);
+
+        // 7. tostring() : convert number into string 
+        int number = 1234;
+        String str1 = Integer.toString(number);
+        System.out.println(str1);
     }
 }
+
